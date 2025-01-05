@@ -61,7 +61,7 @@ _xslicer_ is a Go-based command-line tool that helps you split long text into tw
 
 ### Input File `(input.txt)`
 
-```bash
+```txt
 This is a long text that needs to be split into multiple tweets because it exceeds the character limit of a single tweet.
 The goal is to ensure that no word is split in the middle and that each tweet is concise and readable.
 This app will handle the splitting and add thread numbering to make it easy to follow.
@@ -75,7 +75,7 @@ This app will handle the splitting and add thread numbering to make it easy to f
 
 ### Output File `(output.txt)`
 
-```bash
+```txt
 1/3 This is a long text that needs to be split into multiple tweets because it exceeds the character limit of a single tweet. The goal is to ensure that no word is split in the middle and that each tweet is concise and readable.
 ---
 2/3 This app will handle the splitting and add thread numbering to make it easy to follow.
@@ -84,7 +84,7 @@ This app will handle the splitting and add thread numbering to make it easy to f
 
 ### Verbose Output
 
-```bash
+```txt
 Tweets saved to output.txt
 Generated 2 tweets.
 Max tweet length: 280 characters.
