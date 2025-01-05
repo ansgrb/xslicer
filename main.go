@@ -15,6 +15,7 @@ func main() {
 	filePtr := flag.String("file", "", "Path to a text file containing the input")
 	outputPtr := flag.String("output", "", "Path to save the output tweets (e.g., output.txt)")
 	appendPtr := flag.Bool("append", false, "Append tweets to the output file instead of overwriting it")
+	verbosePtr := flag.Bool("verbose", false, "Print additional information")
 	maxLengthPtr := flag.Int("maxlength", 280, "Maximum length of each tweet")
 	flag.Parse()
 
@@ -56,6 +57,19 @@ func main() {
 			log.Fatalf("Error saving tweets to file: %v", err)
 		}
 		fmt.Printf("Tweets saved to %s\n", *outputPtr)
+	}
+
+	// Print verbose information if -verbose flag is enabled
+	if *verbosePtr {
+		fmt.Printf("Generated %d tweets.\n", len(tweets))
+		fmt.Printf("Max tweet length: %d characters.\n", *maxLengthPtr)
+		if *outputPtr != "" {
+			if *appendPtr {
+				fmt.Println("Tweets were appended to the output file.")
+			} else {
+				fmt.Println("Tweets were written to the output file (overwritten if it existed).")
+			}
+		}
 	}
 }
 
