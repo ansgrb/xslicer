@@ -12,4 +12,3 @@ It's exciting to think about where this shift will take us. RN was a great tool 
 Final Thoughts 🙄🤞
 React Native was a great starting point for me and my team. It really helped us build and ship apps fast, especially with Expo making things so easy. However, regarding native performance, production-ready apps, and long-term scalability, Kotlin + Jetpack Compose wins hands down.
 To anyone out there who may be wondering if Jetpack Compose is worth learning: believe me, it is. Most especially if you've been working in RN and are curious about native dev again—just give it a shot. And if you're thinking of cross-platform, Kotlin Multiplatform is something you really want to take a look at.
-#keeplearning
